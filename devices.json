@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Table",
+        "type" : "light",
+        "hostname" : "localhost",
+        "topic" : "lights/table"
+    },
+    {
+        "name" : "Sol",
+        "type" : "light",
+        "hostname" : "localhost",
+        "topic" : "lights/sol"
+    },
+    {
+        "name" : "Imprimante 3D",
+        "type" : "outlet",
+        "hostname" : "localhost",
+        "topic" : "outlets/impr3d"
+    },
+    {
+        "name": "Bouilloire",
+        "type": "outlet",
+        "hostname": "localhost",
+        "topic": "outlets/bouilloire"
+    },
+    {
+        "name": "Lampe cuisine",
+        "type": "light",
+        "hostname": "localhost",
+        "topic": "lights/lampe_cuisine"
+    }
+]
