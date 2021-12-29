@@ -1,0 +1,14 @@
+.on-device-label {
+    font-weight: bold;
+    color: rgb(0, 255, 00);
+}
+
+.off-device-label {
+    font-weight: bold;
+    color: rgb(255, 00, 00);
+}
+
+.offline-device-label {
+    font-weight: bold;
+    color: rgb(47, 57, 112);
+}
