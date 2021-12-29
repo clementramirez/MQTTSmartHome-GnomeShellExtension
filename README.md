@@ -30,5 +30,12 @@ An example of device configuration below :
   }
 ]
 ```
+For now only 2 types of devices are available, outlets and lights.
+The parameters needs to be strings.
+# Things to do
+- [x] All devices are configurable by a json file
+- [ ] Add the possibility to change the configuration of devices directly on a graphic interface
+- [ ] Add new types of devices
+- [ ] Add luminosity and color configuration for lights
 # Contacts
 - ramirez.clement3@gmail.com
