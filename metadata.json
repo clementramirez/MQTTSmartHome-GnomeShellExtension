@@ -1,7 +1,8 @@
 {
   "name": "SmartHome Control",
   "description": "Control Pannel for switching off and on mqtt devices",
-  "uuid": "ramirez.clement3@gmail.com",
+  "uuid": "mqttsmarthomecontrol@ramirez.clement3gmail.com",
+  "version": 2,
   "url" : "https://github.com/DiyVE/MQTTSmartHome-GnomeShellExtension/upload/main",
   "shell-version": [
     "3.36"

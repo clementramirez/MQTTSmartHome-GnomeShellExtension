@@ -6,12 +6,9 @@ const Me = ExtensionUtils.getCurrentExtension();
 const Main = imports.ui.main;
 const PanelMenu = imports.ui.panelMenu;
 const PopupMenu = imports.ui.popupMenu;
-const Clutter = imports.gi.Clutter;
 const GLib = imports.gi.GLib;
-const Lang = imports.lang;
 
 const MenuItems = Me.imports.menuitems;
-const Utilities = Me.imports.utilities;
 
 class Extension {
     constructor() {
@@ -62,7 +59,6 @@ class Extension {
         {
             let fileContents = String(GLib.file_get_contents(Me.path + '/devices.json')[1]);
             let raw_json = JSON.parse(fileContents);
-            log(raw_json[0].name);
             for (let i = 0; i < raw_json.length; i++) {
                 if (raw_json[i].type == "light") {
                     devices.push(new MenuItems.LampMenuItem(raw_json[i].name, raw_json[i].topic, raw_json[i].hostname));

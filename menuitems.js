@@ -7,7 +7,6 @@ const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 const GLib = imports.gi.GLib;
 const Mainloop = imports.mainloop;
-const Lang = imports.lang;
 
 const Utilities = Me.imports.utilities;
 
@@ -57,7 +56,7 @@ var DeviceMenuItem = GObject.registerClass(
     //Update the state of the device asynchronously and update labels, icons accordingly
     update(PopupMenuItem) {
         let commandPath = GLib.find_program_in_path('mosquitto_sub');
-        let dataFuture = new Utilities.Future([commandPath, '-W', '1', '-h', this.host,'-t', this.topic], Lang.bind(this, function (stdata) {
+        let dataFuture = new Utilities.Future([commandPath, '-W', '1', '-h', this.host,'-t', this.topic], (stdata) => {
             if (stdata == "")
             {
                 PopupMenuItem.setSensitive(false);
@@ -81,7 +80,7 @@ var DeviceMenuItem = GObject.registerClass(
                     this._state = false;
                 }
             }
-        }));
+        });
     }
 });
 
