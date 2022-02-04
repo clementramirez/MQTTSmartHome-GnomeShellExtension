@@ -1,0 +1,58 @@
+[
+    {
+        "name" : "Table",
+        "type" : "light",
+        "hostname" : "127.0.0.1",
+        "topic" : "lights/table"
+    },
+    {
+        "name" : "Sol",
+        "type" : "light",
+        "hostname" : "127.0.0.1",
+        "topic" : "lights/sol"
+    },
+    {
+        "name" : "Imprimante 3D",
+        "type" : "outlet",
+        "hostname" : "127.0.0.1",
+        "topic" : "outlets/impr3d"
+    },
+    {
+        "name": "Bouilloire",
+        "type": "outlet",
+        "hostname": "127.0.0.1",
+        "topic": "outlets/boiler"
+    },
+    {
+        "name": "Lampe cuisine",
+        "type": "light",
+        "hostname": "127.0.0.1",
+        "topic": "lights/lampe_cuisine"
+    },
+    {
+        "name": "Bouilloire Cuisine",
+        "type": "kettle",
+        "hostname": "127.0.0.1",
+        "topic": "outlets/boiler"
+    },
+    {
+        "name": "Qualitée de l'air",
+        "type": "sensor",
+        "hostname": "127.0.0.1",
+        "topic": "sensors/temperature",
+        "unit": "ppm",
+        "icon_path": "/icons/icons8-hygrometer-48.png"
+    },
+    {
+        "name": "Temperature",
+        "type": "temperature",
+        "hostname": "127.0.0.1",
+        "topic": "sensors/temperature"
+    },
+    {
+        "name": "Humiditée",
+        "type": "humidity",
+        "hostname": "127.0.0.1",
+        "topic": "sensors/humidity"
+    }
+]
