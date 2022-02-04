@@ -10,7 +10,6 @@ const Mainloop = imports.mainloop;
 
 const Utilities = Me.imports.utilities;
 
-<<<<<<< HEAD
 var SensorMenuItem = GObject.registerClass(
     class SensorMenuItem extends PopupMenu.PopupImageMenuItem {
         _init(displayedName, topic, host, sensorLogo, sensorSuffix) {
@@ -68,8 +67,6 @@ var HumSensorMenuItem = GObject.registerClass(
         }
     }
 );
-=======
->>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
 
 var DeviceMenuItem = GObject.registerClass(
   class DeviceMenuItem extends PopupMenu.PopupImageMenuItem {
@@ -159,7 +156,6 @@ var OutletMenuItem = GObject.registerClass(
         }
     }
 );
-<<<<<<< HEAD
 
 var KettleMenuItem = GObject.registerClass(
     class KettleMenuItem extends DeviceMenuItem {
@@ -168,5 +164,3 @@ var KettleMenuItem = GObject.registerClass(
         }
     }
 );
-=======
->>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
