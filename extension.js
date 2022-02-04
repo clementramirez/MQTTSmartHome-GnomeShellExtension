@@ -30,9 +30,13 @@ class Extension {
         //Connect _indicator to update devices on button press
         this._indicator.connect('button-press-event' , function() {
             for (const device of devices) {
+<<<<<<< HEAD
                 log(`Updating ${device.displayedName}`);
                 device.update(device);
                 log(`Updated ${device.displayedName}`);
+=======
+                device.update(device);
+>>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
             }
 
         });
@@ -56,6 +60,7 @@ class Extension {
         outletsSubmenu.icon.set_gicon(new Gio.FileIcon({file: Gio.File.new_for_path(Me.path + '/icons/socketoff.png')}));
         this._indicator.menu.addMenuItem(outletsSubmenu);
 
+<<<<<<< HEAD
         // Add Kettle Panel
         let kettlesSubmenu = new PopupMenu.PopupSubMenuMenuItem("Kettles Control", true);
         kettlesSubmenu.icon.set_gicon(new Gio.FileIcon({file: Gio.File.new_for_path(Me.path + '/icons/kettle.png')}));
@@ -66,6 +71,8 @@ class Extension {
         sensorSubmenu.icon.set_gicon(new Gio.FileIcon({file: Gio.File.new_for_path(Me.path + "/icons/sensors_icon.png")}));
         this._indicator.menu.addMenuItem(sensorSubmenu);
 
+=======
+>>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
         // Parse the JSON file and add devices to the list
         try
         {
@@ -80,6 +87,7 @@ class Extension {
                     devices.push(new MenuItems.OutletMenuItem(raw_json[i].name, raw_json[i].topic, raw_json[i].hostname));
                     outletsSubmenu.menu.addMenuItem(devices[i]);
                 }
+<<<<<<< HEAD
                 else if (raw_json[i].type == "kettle") {
                     devices.push(new MenuItems.KettleMenuItem(raw_json[i].name, raw_json[i].topic, raw_json[i].hostname));
                     kettlesSubmenu.menu.addMenuItem(devices[i]);
@@ -99,6 +107,8 @@ class Extension {
                 else {
                     log("Device type not supported");
                 }
+=======
+>>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
             }
         }
         catch(e)

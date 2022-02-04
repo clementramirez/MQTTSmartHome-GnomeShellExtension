@@ -2,30 +2,48 @@
     {
         "name" : "Table",
         "type" : "light",
+<<<<<<< HEAD
         "hostname" : "127.0.0.1",
+=======
+        "hostname" : "localhost",
+>>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
         "topic" : "lights/table"
     },
     {
         "name" : "Sol",
         "type" : "light",
+<<<<<<< HEAD
         "hostname" : "127.0.0.1",
+=======
+        "hostname" : "localhost",
+>>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
         "topic" : "lights/sol"
     },
     {
         "name" : "Imprimante 3D",
         "type" : "outlet",
+<<<<<<< HEAD
         "hostname" : "127.0.0.1",
+=======
+        "hostname" : "localhost",
+>>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
         "topic" : "outlets/impr3d"
     },
     {
         "name": "Bouilloire",
         "type": "outlet",
+<<<<<<< HEAD
         "hostname": "127.0.0.1",
         "topic": "outlets/boiler"
+=======
+        "hostname": "localhost",
+        "topic": "outlets/bouilloire"
+>>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
     },
     {
         "name": "Lampe cuisine",
         "type": "light",
+<<<<<<< HEAD
         "hostname": "127.0.0.1",
         "topic": "lights/lampe_cuisine"
     },
@@ -56,3 +74,9 @@
         "topic": "sensors/humidity"
     }
 ]
+=======
+        "hostname": "localhost",
+        "topic": "lights/lampe_cuisine"
+    }
+]
+>>>>>>> 2389c0bac94e305609e8a1aef94c98ad37df553a
